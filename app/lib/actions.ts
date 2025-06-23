@@ -36,6 +36,7 @@ export async function createInvoice(formData: FormData) {
   }
  
   revalidatePath('/dashboard/invoices');
+  revalidatePath('/dashboard');
   redirect('/dashboard/invoices');
 }
 
@@ -62,6 +63,7 @@ export async function updateInvoice(id: string, formData: FormData) {
   }
  
   revalidatePath('/dashboard/invoices');
+  revalidatePath('/dashboard');
   redirect('/dashboard/invoices');
 }
 
